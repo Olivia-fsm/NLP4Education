@@ -28,7 +28,6 @@
 ***[ACL-2020]***
 
 
-
 ## Survey Paper
 [**A Review on Question Generation from Natural Language Text**](https://dl.acm.org/doi/pdf/10.1145/3468889)
 *Ruqing Zhang, Jiafeng Guo, Lu Chen, Yixing Fan, Xueqi Cheng*
@@ -47,12 +46,6 @@
 ***[EACL-2021]***
 
 ## Dataset & Benchmark
-
-**[LearningQ: A Large-Scale Dataset for Educational Question Generation](https://www.semanticscholar.org/paper/LearningQ:-A-Large-Scale-Dataset-for-Educational-Chen-Yang/b9c859e211e36849cc8bc3a41bc2d7dc28eb84cd)**
-*Guanliang Chen, Jie Yang, G. Houben*
-***[ICWSM-2018]*** [[code](https://github.com/AngusGLChen/LearningQ)]
-
-
 [**Scisummnet: A large annotated corpus and content-impact models for scientific paper summarization with citation networks**](https://arxiv.org/abs/1909.01716) 
 *Michihiro Yasunaga, Jungo Kasai, Rui Zhang, Alexander R Fabbri, Irene Li, Dan Friedman, and Dragomir R Radev*
 ***[AAAI-2019]***
@@ -60,6 +53,14 @@
 [**What Should I Learn First: Introducing LectureBank for NLP Education and Prerequisite Chain Learning**](https://ojs.aaai.org//index.php/AAAI/article/view/4638)
 *Irene Li, Alexander R. Fabbri, Robert R. Tung, Dragomir R. Radev*
 ***[AAAI-2019]*** [[dataset](https://github.com/Yale-LILY/LectureBank)]
+
+**[Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction](https://aclanthology.org/D18-1360/)**
+*Yi Luan, Luheng He, Mari Ostendorf, Hannaneh Hajishirzi*
+***[EMNLP-2018]***
+
+**[LearningQ: A Large-Scale Dataset for Educational Question Generation](https://www.semanticscholar.org/paper/LearningQ:-A-Large-Scale-Dataset-for-Educational-Chen-Yang/b9c859e211e36849cc8bc3a41bc2d7dc28eb84cd)**
+*Guanliang Chen, Jie Yang, G. Houben*
+***[ICWSM-2018]*** [[code](https://github.com/AngusGLChen/LearningQ)]
 
 ## Question Generation
 [**Question Generation for Adaptive Education**](https://aclanthology.org/2021.acl-short.88.pdf)
@@ -147,6 +148,11 @@
 *Daniel Khashabi, Amos Ng, Tushar Khot, Ashish Sabharwal, Hannaneh Hajishirzi and Chris Callison-Burch*
 ***[EMNLP-2021]***
 
+## Extractive Summarization
+**[The Effect of Pretraining on Extractive Summarization for Scientific Documents](https://aclanthology.org/2021.sdp-1.9/)**
+*Yash Gupta, Pawan Sasanka Ammanamanchi, Shikha Bordia, Arjun Manoharan, Deepak Mittal, Ramakanth Pasunuru, Manish Shrivastava, Maneesh Singh, Mohit Bansal, Preethi Jyothi*
+***[NAACL-2021]***
+
 ## Simplification
 [**Metaphors in Text Simplification: To change or not to change, that is the question.**](https://aclanthology.org/W19-4444/)
 *Yulia Clausen and Vivi Nastase.*
@@ -202,4 +208,10 @@
 [**Towards Interactive Language Modeling**](https://maartjeth.github.io/assets/documents/interactive_language_modeling.pdf)
 *Maartje ter Hoeve et al.*
 ***[preprint]***
+
+
+## Other Generation Tasks
+**[Automated curriculum generation through setter-solver interactions](https://openreview.net/forum?id=H1e0Wp4KvH)**
+*Sebastien Racaniere, Andrew Lampinen, Adam Santoro, David Reichert, Vlad Firoiu, Timothy Lillicrap*
+***[ICLR-2020]***
 
