@@ -5,9 +5,10 @@
 - Simplification
 - Question Answering
 - Question Generation
-    - Factoid Question
+    - Free-answer Question
+        - Factoid Question
+        - Causal Question
     - MCQ
-    - Causal Question
 - Retrieval
 - Domain-specific
 - Second-language Learning
@@ -17,6 +18,24 @@
 - Dialogue
 - Interactive Evaluation
 - Active Learning
+
+### Category by Task
+
+
+| T1-Extraction | T2-AbsSummarization | T3-Simplification | T4-Enrichment | T5-Negation |
+| ------------- | ------------------- | ----------------- | ------------- | ----------- |
+|               |                     |                   |               |             |
+| Text          | Text                | Text              |               |             |
+
+### Categorized by Domain
+
+
+| Language | Scientific | Math | Not-Specified    |
+| -------- | ---------- | ---- | ---------------- |
+|          |            |      |     |
+|          |            |      |     |
+
+
 
 ## Previous Special-Topic Samples
 **[Including Signed Languages in Natural Language Processing](https://aclanthology.org/2021.acl-long.570.pdf)**
@@ -62,14 +81,126 @@
 *Guanliang Chen, Jie Yang, G. Houben*
 ***[ICWSM-2018]*** [[code](https://github.com/AngusGLChen/LearningQ)]
 
-## Question Generation
+## Educational Taxonomy
+Evaluating the quality of learning: The SOLO taxonomy (Structure of the Observed Learning Outcome).
+
+Taxonomy of educational objectives
+
+# Categorize by Purpose
+## Assist Human Reading Comprehension
+[1976] [Automatic question generation from text—An aid to independent study](https://dl.acm.org/doi/10.1145/800107.803459)
+    --- [*Improve independent study of reading materials]
+
+[2009] [Generating Instruction Automatically for the Reading Strategy of Self-Questioning](https://www.semanticscholar.org/paper/Generating-Instruction-Automatically-for-the-of-Mostow-Chen/0e0d47e73f9f0e59024078db966470c2d4483b72) 
+    ---[**mention Reading Strategy*] 
+
+[2017] [Learning to Ask: Neural Question Generation for Reading Comprehension](https://aclanthology.org/P17-1123/) 
+    --- [*Seq2Seq*]
+    
+[Difficulty controllable question generation for reading comprehension](https://arxiv.org/abs/1807.03586)
+> Difficulty-controllable Question Generation (DQG)
+
+
+[2020] [Exploring Artificial Jabbering for Automatic Text Comprehension Question Generation](https://www.semanticscholar.org/paper/Exploring-Artificial-Jabbering-for-Automatic-Text-Steuer-Filighera/aa9ff171f2ff169a05076d26dc28e0af519d35c3)
+> **Flaw Analysis** on existing AQG for promote reading comprehension
+
+
+[2021] [***preprint***] [I Do Not Understand What I Cannot Define: Automatic Question Generation With Pedagogically-Driven Content Selection](https://www.semanticscholar.org/paper/I-Do-Not-Understand-What-I-Cannot-Define%3A-Automatic-Steuer-Filighera/a0fd69c2540158fe79ff8cdba3d36a71e737211a)
+> The  paper  introduces  a  novel  **pedagogically  meaningful content  selection  mechanism**  to  find  question-worthy  sentencesand  answers  in  arbitrary  textbook  contents.  We  conducted  an empirical  evaluation  study  with  educational  experts,  annotating 150 generated questions in six different domains. Results indicatea high linguistic quality of the generated questions. Furthermore, the  evaluation  results  imply  that  the  majority  of  the  generated questions inquire central information related to the given text and may  foster  text  comprehension  in  specific  learning  scenarios.
+
+
+
+
+## Writing Support
+[2012] [G-Asks: An Intelligent Automatic Question Generation System for Academic Writing Support](https://www.semanticscholar.org/paper/G-Asks:-An-Intelligent-Automatic-Question-System-Liu-Calvo/64403390bdd1c72cffba1fb4d9db742df63384ea)
+> This is the **first project**, to our knowledge, that contributes a system for **generating content-specific questions that support writing**. 
+> *[When students are asked to write a literature review or an essay, the purpose is often not only to
+develop disciplinary communication skills, but also to learn and reason from multiple documents. This involves skills such as sourcing (i.e., citing sources as evidence to support arguments) and information integration (i.e., presenting the evidence in a cohesive and persuasive way).]*
+
+
+
+## Knowledge Acquisition & Active Learning
+[1998] [Learning concepts by asking questions](https://www.semanticscholar.org/paper/LEARNING-CONCEPTS-BY-ASKING-QUESTIONS-Sammut-Banerji/b2e3e096c613f49bcaca3ce9baf019621eea7ff8)
+> Marvin, which **uses concepts it has learned previously to learn new concepts**. The program forms hypotheses about the concept being learned and tests the hypotheses by asking the trainer questions. Learning begins when the trainer shows Marvin an example of the concept to be learned. The program determines which objects in the example belong to concepts stored in the memory. A description of the new concept is formed by using the information obtained from the memory to generalize the description of the training example.
+
+[2017] [Question generation for language learning: From ensuring texts are read to supporting learning.](https://aclanthology.org/W17-5038/)
+> we want to broaden the perspective on the different functions questions can play in FLTL and discuss **how automatic question generation can support the different uses**. We **discuss two types of questions serving this purpose**, how they can be generated automatically; and we report on a crowd-sourcing evaluation comparing automatically generated to manually written questions targeting particle verbs, a challenging linguistic form for learners of English.
+
+
+
+## Knowledge Assessment
+[2006][FAST: An automatic generation system for grammar tests](https://aclanthology.org/P06-4001/)
+> ***manually-designed patterns, Grammar Test***
+
+[2010] [Good Question! Statistical Ranking for Question Generation](https://aclanthology.org/N10-1086/)
+> Overgenerate and Ranking by a **binary logistic classifier(?)**
+
+[2012] [Generating Grammar Exercises](https://www.semanticscholar.org/paper/Generating-Grammar-Exercises-Perez-Beltrachini-Gardent/55764527c23884152df9e35b67adea78aaba7190)
+> Language Learning
+
+[2013] [Discriminative Approach to Fill-in-the-Blank Quiz Generation for Language Learners](https://aclanthology.org/P13-2043/)
+
+[2016] [Automatic generation of short answer questions for reading comprehension assessment](https://www.semanticscholar.org/paper/Automatic-generation-of-short-answer-questions-for-Huang-He/8e6a476fe9c1fcbff96499fb28a50117ee285294)
+
+[2017] [Automatic Generation of English Reference Question by Utilising Nonrestrictive Relative Clause](https://pdfs.semanticscholar.org/0ed4/9ef7d10d7324e1e076fb8e11ed0202328bc6.pdf)
+
+
+[2017] [Factual open cloze question generation for assessment of learner’s knowledge](https://educationaltechnologyjournal.springeropen.com/articles/10.1186/s41239-017-0060-3#citeas)
+> **automatic factual open cloze question generation system** ; The sentences are considered as informative based on **part-of-speech tags and certain rules**.
+
+[1999] [A web-based system for automatic language skill assessment: Evaling](https://aclanthology.org/W99-0410/)
+> Linguistic Exercise Design for Native French Language Assessment
+
+[2018] [Compiling Questions into Balanced Quizzes about Documents](https://dl.acm.org/doi/10.1145/3269206.3269298)
+
+
+
+## Instruction/Feedback Generation
+
+
+## Adaptive Learning
 [**Question Generation for Adaptive Education**](https://aclanthology.org/2021.acl-short.88.pdf)
 *Megha Srivastava, Noah Goodman*
 ***[ACL-2021]***
 
+[2018] [Learning to Automatically Generate Fill-In-The-Blank Quizzes](https://aclanthology.org/W18-3722/)
+
+## MATH
+[2017] [Intelligent Math Tutor: Problem-Based Approach to Create Cognizance](https://www.semanticscholar.org/paper/Intelligent-Math-Tutor:-Problem-Based-Approach-to-Gupta-Gantayat/9ea420d1a2a88b6bc1d86c1b09753fe20349aaa0)
+> we built a tool called Intelligent Math Tutor (IMT), which **automatically generates mathematical word problems** such that teachings from other subjects from a given curriculum can also be incorporated. 
+> our tool is the first of its kind tool which **explicitly blends knowledge from multiple dissociated subjects** and uses it to enhance the cognizance of its learners.
+
+## Programming
+[On the Use of Semantic-Based AIG to Automatically Generate Programming Exercises](https://dl.acm.org/doi/10.1145/3159450.3159608)
+
+
+## NO PARTICULAR EDUCATIONAL PURPOSE
+[2011] [Automatic Question Generation using Discourse Cues](https://www.semanticscholar.org/paper/Automatic-Question-Generation-using-Discourse-Cues-Agarwal-shah/3ceb9bc0dd1056257e3b2002cb6fd5b81ae1e54c)
+> we present a system that automatically generates questions from natural language text **using discourse connectives**. We explore the usefulness of the discourse connectives for Question Generation (QG) that looks at the problem beyond sentence level. Our work divides the QG task into content selection and question formation. Content selection consists of finding the relevant part in text to frame question from while question formation involves sense disambiguation of the discourse connectives, identification of question type and applying syntactic transformations on the content. The system is evaluated manually for syntactic and semantic correctness.
+
+[2016] [Infusing NLU into Automatic Question Generation](https://aclanthology.org/W16-6609.pdf)
+
+[Deep Questions without Deep Understanding](https://www.semanticscholar.org/paper/Deep-Questions-without-Deep-Understanding-Labutov-Basu/a04cc4321dd221ed5056174c60c7ab074e573a4f)
+> ontologycrowd-relevance workflow, consisting of
+first representing the original text in a
+low-dimensional ontology, then crowdsourcing candidate question templates aligned with that space, and finally ranking potentially relevant templates for a
+novel region of text. 
+
+[2018] [Answer-focused and Position-aware Neural Question Generation](https://aclanthology.org/D18-1427/)
+
+[2018] [Paragraph-level neural question generationwith maxout pointer and gated self-attention networks](https://aclanthology.org/D18-1424/)
+
+[2019] [**Key Phrase Extraction for Generating Educational Question-Answer Pairs**](https://cs.stanford.edu/people/ebrun/papers/Keyphrase_for_education.pdf)
+***[Proceedings of the Sixth ACM Conference on Learning @ Scale-2019]***
+> Generate Keyphrase as the candidates first, then generate question. No particular evaluation of educational value.
+
+
 [**Automatically Generating Cause-and-Effect Questions from Passages.**](https://aclanthology.org/2021.bea-1.17/)
 *Katherine Stasaski, Manav Rathod, Tony Tu, Yunfang Xiao, and Marti A. Hearst.*
 ***[ACL-2021]***
+> We build a **pipeline that extracts causal
+relations** from passages of input text, and feeds
+these as input to a state-of-the-art neural question generator. The extractor is based on prior work that classifies causal relations by linguistic category. This work results in a new, publicly available ***collection of cause-and-effect questions***
 
 **[Improving Question Generation With to the Point Context](https://aclanthology.org/D19-1317.pdf)**
 *Jingjing Li, Yifan Gao, Lidong Bing, Irwin King, Michael R. Lyu.*
@@ -79,9 +210,6 @@
 *Srikrishna Raamadhurai, R. Baker, Vikraman Poduval*
 ***[BEA@ACL-2019]*** -->
 
-[**Key Phrase Extraction for Generating Educational Question-Answer Pairs**](https://cs.stanford.edu/people/ebrun/papers/Keyphrase_for_education.pdf)
-*A. Willis, G. M. Davis, S. Ruan, L. Manoharan, J. Landay, Emma Brunskill*
-***[Proceedings of the Sixth ACM Conference on Learning @ Scale-2019]***
 
 **[Harvesting paragraph-level question-answer pairs from wikipedia](https://aclanthology.org/P18-1177/)**
 *Xinya Du, Claire Cardie*
@@ -123,10 +251,14 @@
 *Manuel Ciosici, Joe Cecil, Dong-Ho Lee, Alex Hedges, Marjorie Freedman and Ralph Weischedel*
 ***[EMNLP-2021]***
 
-## MCQ
+
 [**Distractor Analysis and Selection for Multiple-Choice Cloze Questions for Second-Language Learners**](https://aclanthology.org/2020.bea-1.10/)
 *Lingyu Gao, Kevin Gimpel and Arnar Jensson.*
 ***[BEA@ACL-2021]***
+
+[**Automatic Distractor Generation for Multiple Choice Questions in Standard Tests**](https://aclanthology.org/2020.coling-main.189.pdf)
+*Zhaopeng Qiu, Xian Wu*
+***[CoLing-2020]***
 
 [**Predicting the Difficulty and Response Time of Multiple Choice Questions Using Transfer Learning**](https://aclanthology.org/2020.bea-1.20/)
 *Kang Xue, Victoria Yaneva, Christopher Runyon and Peter Baldwin.*
@@ -147,6 +279,43 @@
 [**GooAQ: Open Question Answering with Diverse Answer Types**](https://www.semanticscholar.org/paper/GooAQ%3A-Open-Question-Answering-with-Diverse-Answer-Khashabi-Ng/0a36cbfb05e60758d49aa10685460ed9afd96977)
 *Daniel Khashabi, Amos Ng, Tushar Khot, Ashish Sabharwal, Hannaneh Hajishirzi and Chris Callison-Burch*
 ***[EMNLP-2021]***
+
+
+---
+
+
+### Distractor Generation 
+**[Distractor Generation for Multiple Choice Questions Using Learning to Rank](https://aclanthology.org/W18-0533/)**
+*Chen Liang, Xiao Yang, Neisarg Dave, Drew Wham, Bart Pursel, C. Lee Giles*
+***[NAACL-2018]***
+
+# Evaluation
+[2016] [How do machine-generated questions compare to human-generated questions?](https://telrp.springeropen.com/articles/10.1186/s41039-016-0031-7)
+> Bio-domain Question generation evaluation. Result shows no difference from AQG and human-generated question
+
+
+[2017] [Evaluation of automatically generated pronoun reference questions](https://aclanthology.org/W17-5008/)
+> Pronoun reference questions are multiple choice questions that ask test takers to choose an antecedent of a target pronoun in a reading passage from four options. The evaluation was performed from two perspectives: the perspective of English teachers and that of English learners. Item analysis suggests that **machine-generated questions achieve comparable quality with human-made questions**. Correlation analysis revealed a strong correlation between the scores of machine-generated questions and that of human-made questions.
+
+## Difficulty Controllability
+[2016] [Item Difficulty Analysis of English Vocabulary Questions](https://www.semanticscholar.org/paper/Item-Difficulty-Analysis-of-English-Vocabulary-Susanti-Nishikawa/e1e261a17db59bf9385d6db002cdbf79b7846946)
+
+
+
+
+
+# Advanced Subtask Formulation
+## Conversation/Feedback Generation
+[2020] [Review-based question generation with adaptive instance transfer and augmentation](https://aclanthology.org/2020.acl-main.26/)
+
+[2020] [Generating clarifying questions in conversational search systems] (https://dl.acm.org/doi/10.1145/3340531.3418513)
+
+## QA/QG as Interpretability Tool
+[2020] [Asking and answering questions to evaluate the factual consistency of summaries](https://aclanthology.org/2020.acl-main.450.pdf)
+
+
+## Knoledge Graph 
+[2017] [Knowledge Questions from Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/3121050.3121073)
 
 ## Extractive Summarization
 **[The Effect of Pretraining on Extractive Summarization for Scientific Documents](https://aclanthology.org/2021.sdp-1.9/)**
@@ -215,3 +384,10 @@
 *Sebastien Racaniere, Andrew Lampinen, Adam Santoro, David Reichert, Vlad Firoiu, Timothy Lillicrap*
 ***[ICLR-2020]***
 
+
+# Future Direction
+- Difficulty Control
+    - [2016-Item Difficulty Analysis of English Vocabulary Questions](https://www.semanticscholar.org/paper/Item-Difficulty-Analysis-of-English-Vocabulary-Susanti-Nishikawa/e1e261a17db59bf9385d6db002cdbf79b7846946)
+    - 
+- Evaluation
+    - [2017-Evaluation of automatically generated pronoun reference questions](https://aclanthology.org/W17-5008/)
